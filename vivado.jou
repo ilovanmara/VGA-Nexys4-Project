@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Apr 28 11:30:16 2022
+# Process ID: 41604
+# Current directory: C:/Users/mara_/Desktop/sem 2/project_nexys4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent74508 C:\Users\mara_\Desktop\sem 2\project_nexys4\project_nexys4.xpr
+# Log file: C:/Users/mara_/Desktop/sem 2/project_nexys4/vivado.log
+# Journal file: C:/Users/mara_/Desktop/sem 2/project_nexys4\vivado.jou
+# Running On: LAPTOP-ASSSQ5HL, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16861 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mara_/Desktop/sem 2/project_nexys4/project_nexys4.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/mara_/Desktop/sem 2/project_nexys4/project_nexys4.srcs/utils_1/imports/synth_1/Nexys4.dcp}}] -no_script -reset -force -quiet
+remove_files  -fileset utils_1 {{C:/Users/mara_/Desktop/sem 2/project_nexys4/project_nexys4.srcs/utils_1/imports/synth_1/Nexys4.dcp}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
